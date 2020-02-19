@@ -1,5 +1,5 @@
 Package: rowlbot
-Title: What the Package Does (One Line, Title Case)
+Title: R client for the Owlbot Dictionary API
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Kevin",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "kevin.cazelles@gmail.com",
            comment = c(ORCID = "0000-0001-6619-9874"))
-Description: What the package does (one paragraph).
+Description: R client for the Owlbot Dictionary API <https://owlbot.info/>.
 URL: https://github.com/inSileco/rowlbot
 BugReports: https://github.com/inSileco/rowlbot/issues
 License: GPL-3
