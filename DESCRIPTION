@@ -1,0 +1,22 @@
+Package: rowlbot
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Kevin",
+           family = "Cazelles",
+           role = c("aut", "cre"),
+           email = "kevin.cazelles@gmail.com",
+           comment = c(ORCID = "0000-0001-6619-9874"))
+Description: What the package does (one paragraph).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+Imports: 
+    httr,
+    emo,
+    jsonlite,
+    cli,
+    magick,
+    progress
+RoxygenNote: 7.0.2

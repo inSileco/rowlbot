@@ -1,0 +1,38 @@
+---
+output: 
+    md_document
+--- 
+
+# ROWLBOT 
+
+An R Client for the [OWLBOT](https://owlbot.info/) API. 
+
+
+# Installation 
+
+```{R eval = FALSE}
+remotes::install_github("inSileco/rowlbot")
+```
+
+```{R include = FALSE}
+devtools::load_all()
+```
+
+
+# Example 
+
+```{R}
+library(rowlbot)
+ex <- rowlbot("owl")
+ex
+```
+
+So let's plot
+
+```{R}
+plot(ex)
+```
+
+# What for? 
+
+No reason - just for fun.
