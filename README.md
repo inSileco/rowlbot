@@ -1,5 +1,8 @@
-ROWLBOT
+rowlbot
 =======
+
+[![R build
+status](https://github.com/inSileco/rowlbot/workflows/R-CMD-check/badge.svg)](https://github.com/inSileco/rowlbot/actions)
 
 An R Client for the [OWLBOT](https://owlbot.info/) API.
 

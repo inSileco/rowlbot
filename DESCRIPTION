@@ -8,6 +8,8 @@ Authors@R:
            email = "kevin.cazelles@gmail.com",
            comment = c(ORCID = "0000-0001-6619-9874"))
 Description: What the package does (one paragraph).
+URL: https://github.com/inSileco/rowlbot
+BugReports: https://github.com/inSileco/rowlbot/issues
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
