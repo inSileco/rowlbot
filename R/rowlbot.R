@@ -7,7 +7,7 @@
 #' @export
 #' @examples 
 #' \dontrun{
-#' rowlbot("owl")
+#'  rowlbot("owl")
 #' }
 rowlbot <- function(word) {
     out <- rob_res(rob_url(word))

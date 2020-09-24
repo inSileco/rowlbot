@@ -1,8 +1,8 @@
 #' @importFrom graphics plot
-#' @importFrom magick image_read 
+#' @importFrom magick image_read
 #' @importFrom cli cat_line cat_rule style_italic cli_ol cli_ul cli_end cli_li
-#' 
-#' 
+#'
+
 rob_baseurl <- function() "https://owlbot.info/api/v4/dictionary/"
 
 rob_url <- function(...) paste0(rob_baseurl(), ...)
@@ -21,15 +21,14 @@ rob_res <- function(q_url, token = rob_getsecret(), ...) {
     httr::content(con, "parsed", ...)
 }
 
-
 rob_getsecret <- function() {
     val <- Sys.getenv("OWLBOT_TOKEN")
     if (identical(val, "")) {
         message("
-    `OWLBOT_TOKEN` env var has not been set yet.
-    A token is required to use the OWLBOT API, see
-    https://owlbot.info/
-    ")
+            `OWLBOT_TOKEN` env var has not been set yet.
+            A token is required to use the OWLBOT API, see
+            https://owlbot.info/
+        ")
         rob_set_token()
         val <- rob_getsecret()
     }

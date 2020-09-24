@@ -31,6 +31,6 @@ Query the OWLBOT API see \url{https://owlbot.info/}
 
 \examples{
 \dontrun{
-rowlbot("owl")
+ rowlbot("owl")
 }
 }
