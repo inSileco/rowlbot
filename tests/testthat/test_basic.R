@@ -1,6 +1,9 @@
 context("Basic unit tests")
+  
 rq1 <- "owl"
-res1 <- rowlbot(rq1)
+vcr::use_cassette(name = "owl", {
+  res1 <- rowlbot::rowlbot(rq1)
+})
 
 test_that("Check one known entry", {
   expect_equal(class(res1), "rob_def")

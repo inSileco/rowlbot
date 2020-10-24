@@ -1,4 +1,4 @@
 library(testthat)
-library(rowlbot)
-
+library(vcr)
 test_check("rowlbot")
+

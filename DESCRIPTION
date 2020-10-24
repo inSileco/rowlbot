@@ -20,5 +20,6 @@ Imports:
     cli,
     magick
 Suggests:
-    testthat
+    testthat,
+    vcr
 RoxygenNote: 7.1.1

@@ -1,0 +1,39 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://owlbot.info/api/v4/dictionary/owl
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      Authorization: Token 6144ec313bd7f83b3a2ed21a252b53aef46aa898
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Sat, 24 Oct 2020 22:02:59 GMT
+      content-type: application/json
+      allow: GET, HEAD, OPTIONS
+      x-frame-options: SAMEORIGIN
+      vary: Accept, Origin
+      cf-cache-status: DYNAMIC
+      cf-request-id: 05fe3bf6c30000ece23828e000000001
+      expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=bM%2BOYveo8ZkiwKLgXnIJv8cFZYA6T2CQAQz%2BxX2pYtS2m%2F5Yf%2F%2BRhIkqt1PTmGmpmfzQREcYE2yZGatCMke2TvYiYW5%2FUkO4N3LYKg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel: '{"report_to":"cf-nel","max_age":604800}'
+      server: cloudflare
+      cf-ray: 5e76fc379afcece2-YUL
+      content-encoding: br
+    body:
+      encoding: UTF-8
+      file: no
+      string: "{\"definitions\":[{\"type\":\"noun\",\"definition\":\"a nocturnal bird
+        of prey with large eyes, a facial disc, a hooked beak, and typically a loud
+        hooting call.\",\"example\":\"I love reaching out into that absolute silence,
+        when you can hear the owl or the wind.\",\"image_url\":\"https://media.owlbot.info/dictionary/images/owl.jpg.400x400_q85_box-403,83,960,640_crop_detail.jpg\",\"emoji\":\"\U0001F989\"}],\"pronunciation\":\"oul\",\"word\":\"owl\"}"
+  recorded_at: 2020-10-24 22:02:59 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
