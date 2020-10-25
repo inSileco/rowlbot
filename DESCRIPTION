@@ -1,6 +1,7 @@
 Package: rowlbot
 Title: R client for the Owlbot Dictionary API
 Version: 0.0.0.9000
+Date: 2020-10-25
 Authors@R: 
     person(given = "Kevin",
            family = "Cazelles",
