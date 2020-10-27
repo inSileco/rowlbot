@@ -15,20 +15,20 @@ http_interactions:
       reason: OK
       message: 'Success: (200) OK'
     headers:
-      date: Sun, 25 Oct 2020 23:04:07 GMT
+      date: Tue, 27 Oct 2020 19:08:12 GMT
       content-type: application/json
-      set-cookie: __cfduid=d4618ead107327827936cb8fe6c3edf761603667047; expires=Tue,
-        24-Nov-20 23:04:07 GMT; path=/; domain=.owlbot.info; HttpOnly; SameSite=Lax
+      set-cookie: __cfduid=dc2f669d83bdfc2bc59eec9d0f6adc1f61603825691; expires=Thu,
+        26-Nov-20 19:08:11 GMT; path=/; domain=.owlbot.info; HttpOnly; SameSite=Lax
       allow: GET, HEAD, OPTIONS
       x-frame-options: SAMEORIGIN
       vary: Accept, Origin
       cf-cache-status: DYNAMIC
-      cf-request-id: 06039a4afb00003fdb2fbb4000000001
+      cf-request-id: 060d0f051a0000b2592a057000000001
       expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      report-to: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=QYvwzGSF38T2wQANJwc4WTMg8jguJXCOecpiuYmv4%2BBlJ9A%2BG3v7FPYwBTg8vv5pCqCQPFxL%2FQPoAmeL7BUwKaK%2B3zAzVgZBjyApxQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      report-to: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=qv1iE6nKxlUPxedcSQZD7PjXnagLaZqY3XSafmM1V74UYiqBocCAp0pBLWYxivwNzCu9%2BsV7vstNYo89BznWpF8jOQ7HaEqIPbV%2BKDqgRRjAl8%2BKfajyXw%3D%3D"}],"group":"cf-nel","max_age":604800}'
       nel: '{"report_to":"cf-nel","max_age":604800}'
       server: cloudflare
-      cf-ray: 5e7f9324c9c03fdb-YUL
+      cf-ray: 5e8eb44e8e90b259-YYC
       content-encoding: br
     body:
       encoding: UTF-8
@@ -36,6 +36,6 @@ http_interactions:
       string: "{\"definitions\":[{\"type\":\"noun\",\"definition\":\"a nocturnal bird
         of prey with large eyes, a facial disc, a hooked beak, and typically a loud
         hooting call.\",\"example\":\"I love reaching out into that absolute silence,
-        when you can hear the owl or the wind.\",\"image_url\":\"https://media.owlbot.info/dictionary/images/owl.jpg.400x400_q85_box-403,83,960,640_crop_detail.jpg\",\"emoji\":\"\U0001F989\"}],\"word\":\"owl\",\"pronunciation\":\"oul\"}"
-  recorded_at: 2020-10-25 23:04:07 GMT
+        when you can hear the owl or the wind.\",\"image_url\":\"https://media.owlbot.info/dictionary/images/owl.jpg.400x400_q85_box-403,83,960,640_crop_detail.jpg\",\"emoji\":\"\U0001F989\"}],\"pronunciation\":\"oul\",\"word\":\"owl\"}"
+  recorded_at: 2020-10-27 19:08:12 GMT
   recorded_with: vcr/0.5.4, webmockr/0.7.0

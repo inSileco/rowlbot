@@ -6,7 +6,7 @@
 \alias{plot.rob_def}
 \title{Query the OWLBOT API see \url{https://owlbot.info/}}
 \usage{
-rowlbot(word)
+rowlbot(word, token = NULL, ...)
 
 \method{print}{rob_def}(x, ...)
 
@@ -15,9 +15,12 @@ rowlbot(word)
 \arguments{
 \item{word}{a word to be defined.}
 
-\item{x}{an object of class \code{rob_def}.}
+\item{token}{authentification token. If \code{NULL} (default) then is \code{\link[=rob_get_secret]{rob_get_secret()}}
+called which looks for \code{OWLBOT_TOKEN} in environment variables.}
 
-\item{...}{ignored.}
+\item{...}{Extra argument passed to \code{\link[httr:GET]{httr::GET()}}.}
+
+\item{x}{an object of class \code{rob_def}.}
 }
 \description{
 Query the OWLBOT API see \url{https://owlbot.info/}

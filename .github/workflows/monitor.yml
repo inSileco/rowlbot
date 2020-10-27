@@ -23,8 +23,8 @@ jobs:
         shell: Rscript {0}
       - name: Use rowlbot 
         run: |
-           rowlbot::rowlbot("owl")
-           rowlbot::rowlbot("cool")  
+           rowlbot::rowlbot("owl", "${{ secrets.OWLBOT_TOKEN }}")
+           rowlbot::rowlbot("cool", "${{ secrets.OWLBOT_TOKEN }}")
         shell: Rscript {0}
           
 

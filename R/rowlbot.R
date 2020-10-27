@@ -2,15 +2,18 @@
 #' 
 #' @param word a word to be defined.
 #' @param x an object of class `rob_def`.
-#' @param ... ignored. 
+#' @param token authentification token. If `NULL` (default) then is [rob_get_secret()]
+#' called which looks for `OWLBOT_TOKEN` in environment variables.
+#' @param ... Extra argument passed to [httr::GET()].
 #'
 #' @export
 #' @examples 
 #' \dontrun{
 #'  rowlbot("owl")
 #' }
-rowlbot <- function(word) {
-    out <- rob_res(rob_url(word))
+rowlbot <- function(word, token = NULL, ...) {
+    if (is.null(token)) token <- rob_get_secret()
+    out <- rob_res(rob_url(word), token = token, ...)
     class(out) <- "rob_def"
     out
 }

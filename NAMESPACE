@@ -2,6 +2,9 @@
 
 S3method(plot,rob_def)
 S3method(print,rob_def)
+export(forget_token)
+export(rob_get_secret)
+export(rob_set_token)
 export(rowlbot)
 importFrom(cli,cat_line)
 importFrom(cli,cat_rule)
