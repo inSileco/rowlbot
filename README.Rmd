@@ -5,7 +5,7 @@ output:
 
 # rowlbot
 [![R build status](https://github.com/inSileco/rowlbot/workflows/R-CMD-check/badge.svg)](https://github.com/inSileco/rowlbot/actions)
-
+[![codecov](https://codecov.io/gh/inSileco/rowlbot/branch/master/graph/badge.svg?token=YZYJGK1395)](undefined)
 
 An R client for the [Owlbot Dictionary API](https://owlbot.info/).
 
@@ -37,4 +37,5 @@ plot(ex)
 
 # What for? 
 
-No reason - just for fun.
+`rowl` was started for fun and turned out to be a good minimal example to
+explain how to create a R client for web API. 
