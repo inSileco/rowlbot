@@ -1,0 +1,32 @@
+name: Monitor API
+
+on:
+  schedule:
+    - cron: '33 3 * * 6'
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: rocker/verse:latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@master
+      - name: Install apt-get packages
+        run: sudo apt-get install -y libmagick++-dev
+      - name: Install rowlbot 
+        run: |
+          install.packages('remotes')
+          remotes::install_github("inSileco/rowlbot")
+        shell: Rscript {0}
+      - name: Use rowlbot 
+        run: |
+           rowlbot::rowlbot("owl")
+           rowlbot::rowlbot("cool")  
+        shell: Rscript {0}
+          
+
+
+

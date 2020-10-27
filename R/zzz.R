@@ -10,7 +10,10 @@ rob_url <- function(...) paste0(rob_baseurl(), ...)
 rob_get <- function(q_url, token, ...) {
     token <- paste0("Token ", token)
     names(token) <- "Authorization"
+    print(
     httr::GET(q_url, httr::add_headers(token), ...)
+  )
+  httr::GET(q_url, httr::add_headers(token), ...)
 }
 
 rob_res <- function(q_url, token = rob_getsecret(), ...) {
@@ -18,6 +21,7 @@ rob_res <- function(q_url, token = rob_getsecret(), ...) {
     # check status
     httr::stop_for_status(con)
     # parsed
+    print(httr::content(con, "raw", ...))
     httr::content(con, "parsed", ...)
 }
 
