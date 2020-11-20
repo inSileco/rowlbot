@@ -15,10 +15,11 @@ rowlbot(word, token = NULL, ...)
 \arguments{
 \item{word}{a word to be defined.}
 
-\item{token}{authentification token. If \code{NULL} (default) then is \code{\link[=rob_get_secret]{rob_get_secret()}}
-called which looks for \code{OWLBOT_TOKEN} in environment variables.}
+\item{token}{authentification token. If \code{NULL} (default) then \code{\link[=rob_get_secret]{rob_get_secret()}}
+is called which looks for \code{OWLBOT_TOKEN} in environment variables and calls
+\code{\link[=rob_set_token]{rob_set_token()}} is \code{OWLBOT_TOKEN} is missing.}
 
-\item{...}{Extra argument passed to \code{\link[httr:GET]{httr::GET()}}.}
+\item{...}{Extra arguments passed to \code{\link[httr:GET]{httr::GET()}}.}
 
 \item{x}{an object of class \code{rob_def}.}
 }

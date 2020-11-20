@@ -2,9 +2,10 @@
 #' 
 #' @param word a word to be defined.
 #' @param x an object of class `rob_def`.
-#' @param token authentification token. If `NULL` (default) then is [rob_get_secret()]
-#' called which looks for `OWLBOT_TOKEN` in environment variables.
-#' @param ... Extra argument passed to [httr::GET()].
+#' @param token authentification token. If `NULL` (default) then [rob_get_secret()]
+#' is called which looks for `OWLBOT_TOKEN` in environment variables and calls 
+#' [rob_set_token()] is `OWLBOT_TOKEN` is missing. 
+#' @param ... Extra arguments passed to [httr::GET()].
 #'
 #' @export
 #' @examples 
@@ -49,7 +50,7 @@ print.rob_def <- function(x, ...) {
 #' @describeIn rowlbot plot method for `rob_def` object.
 #' @export
 plot.rob_def <- function(x, ...) {
-    out <- image_read(x$definitions[[1]]$image_url)
+    out <- image_read(x$definitions[[1L]]$image_url)
     plot(out)
     invisible(out)
 }
